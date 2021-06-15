@@ -1,0 +1,105 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    line-height:.4;
+    padding: 40px 0;
+}
+.underline{
+    height: .5rem;
+    width: 100px;
+    background: sandybrown;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.section-center{
+    display: grid;
+    margin:  0 auto;
+    max-width: 1160px;
+    justify-items: center;
+    gap: 2rem 1rem;
+   
+}
+.menu-item{
+    display: grid;
+    max-width: 320px;
+
+}
+.photo{
+    width: 100%;
+    border-radius: .8rem;
+}
+header{
+    text-transform: capitalize;
+    display: flex;
+    justify-content:space-between;
+}
+.price{
+    color: sandybrown;
+}
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 450px;
+    margin: 0 auto 3rem auto;
+    justify-content: center;
+}
+.filter-btn{
+background: transparent;
+border:2px solid sandybrown;
+padding: .5rem .8rem;
+margin: 3px;
+border-radius: 4px;
+font-size: 1rem;
+text-transform: capitalize;
+outline: none;
+
+}
+.filter-btn:hover{
+    background: sandybrown;
+    color: white;
+    font-weight: 700;
+}
+@media screen and (min-width:768px){
+    .menu-item{
+        grid-template-columns: 1.5fr 2fr;
+        max-width: 760px;
+        gap: 1rem 1rem;
+    }
+    header{
+        line-height: 0;
+    }
+    header h4{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (min-width:1330px){
+    .section-center{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 2rem;
+    }
+    .menu-item{
+        min-width: 600px;
+    }
+    .photo{
+        height: 200px;
+    }
+    .btn-container{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .filter-btn{
+        padding: .5rem 1rem;
+        margin: 0;
+    }
+   
+}
+
+
+
